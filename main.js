@@ -1,4 +1,4 @@
-//(function() {
+(function() {
     const $ = (selector, multi = false) => {
         if (multi) {
             return document.querySelectorAll(selector);
@@ -96,4 +96,4 @@
         navigator.clipboard.writeText(faviconCodeArea.value);        
     };
 
-//})();
+})();
