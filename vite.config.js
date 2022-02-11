@@ -1,8 +1,8 @@
 // Configuration
 import { defineConfig } from 'vite';
-import reactRefresh from '@vitejs/plugin-react-refresh';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-    plugins: [reactRefresh()],
-    css: { modules: { localsConvention: 'camelCase' } },
+    base: '/emoji-favicon/',
+    plugins: [react()]
 });
