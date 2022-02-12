@@ -19,8 +19,6 @@ function App() {
         height: 20
     };
 
-    const faviconElement = document.querySelector('link[rel="icon"]');
-
     const random = (begin, end) => {
         return Math.floor(Math.random() * end - begin) + begin;
     };
@@ -44,7 +42,7 @@ function App() {
         setOutputCode(faviconTemplate
             .replace(`{href}`, newFaviconHref));
 
-        faviconElement.setAttribute('href', faviconHref);
+        document.querySelector('link[rel="icon"]').setAttribute('href', newFaviconHref);
     };
 
     const emojiClick = e => {
@@ -67,7 +65,6 @@ function App() {
         setFaviconHref,
         emojiList,
         emojiJson,
-        faviconElement,
         random,
         randomInArray,
         emojiClick,
