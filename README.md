@@ -1,6 +1,6 @@
 # Emoji Favicon Generator
 
-[Demo](https://yinkar.github.io/toys/emoji-favicon/)
+[Demo](https://yinkar.github.io/emoji-favicon/)
 
 ## Screenshot
 ![Screenshot](screenshot.png)
